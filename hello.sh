@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Function executed at $(date) from commit $(git rev-parse --short HEAD)"
+echo "Serverless function v2 executed at $(date) from commit $(git rev-parse --short HEAD)"
