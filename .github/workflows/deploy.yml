@@ -1,0 +1,17 @@
+name: Serverless function
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  run-function:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Run the function
+        run: |
+          chmod +x hello.sh
+          ./hello.sh
